@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucky shop</title>
+  <link rel="stylesheet" href="assets/Css/style.css">
+  <link rel="shortcut icon" href="assets/images/favicon.jpg" type="image/png">
+  <script src="https://kit.fontawesome.com/385d797bd0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="hearder">
+      <div id="main-n">
+        <ul class="nav">
+          <li>
+            <div class="search">
+              <input type="text" placeholder="Nhập tên sản phẩm...">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </li>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="About.html">Giới thiệu</a></li>
+          <li><a href="product.html">Sản phẩm</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+          <li>
+            <a href="#"><i class="usi fa-regular fa-user"></i> Tài khoản </a>
+            <ul class="subnav">
+              <li><a href="#log-in">Đăng nhập</a></li>
+              <li><a href="#sign-up">Đăng ký</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div id="log-in" class="modal overlay">
+
+          <a href="" class="overlay-close"></a>
+          <div class="modal-body">
+            <div id="img">
+              <h1><i class="check fa-sharp fa-solid fa-check"></i></h1>
+            </div>
+            <div class="text">
+              <i class="fa-regular fa-user"></i>
+              <input type="text" placeholder="Tên đăng nhập">
+            </div>
+            <div class="text">
+              <i class="fa-solid fa-lock" style="color: #1f4e51;"></i>
+              <input type="password" placeholder="Nhập mật khẩu truy cập">
+            </div>
+            <div>
+              <input id="login-btn" type="button" value="Đăng nhập">
+            </div>
+            <div class="cach"><a href="">MuaQuên mật khẩu</a> <a href="#sign-up">Đặng kí</a></div>
+          </div>
+        </div>
+
+        <div id="sign-up" class="modal overlay">
+
+          <a href="" class="overlay-close"></a>
+          <div class="modal-body">
+            <div id="img">
+              <h1><i class="check fa-sharp fa-solid fa-user-plus"></i></h1>
+            </div>
+            <div class="text">
+              <input type="text" placeholder="Họ tên">
+            </div>
+            <div class="text">
+              <input type="email" placeholder="Email">
+            </div>
+            <div class="text">
+              <input type="text" placeholder="Số điện thoại">
+            </div>
+            <div class="text">
+              <input type="password" placeholder="Nhập mật khẩu">
+            </div>
+            <div class="text">
+              <input type="password" placeholder="Nhập lại mật khẩu">
+            </div>
+            <div>
+              <input id="login-btn" type="button" value="Đăng ký">
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <div id="slider">
+        <div class="logo">
+          <a href="index.html">Lucky</a>
+        </div>
+        <div id="bg"></div>
+      </div>
+      <div class="slideshow-container">
+        <div class="slide">
+          <img src="./assets/images/banner-main.png" alt="Slide 1">
+        </div>
+        <div class="slide">
+          <img src="./assets/images/banner-2.png" alt="Slide 3">
+        </div>
+
+        <div class="slide">
+          <img src="./assets/images/banner-1.png" alt="Slide 2">
+        </div>
+
+        <div class="slide">
+          <img src="./assets/images/banner-3.png" alt="Slide 3">
+        </div>
+
+        <div class="slide">
+          <img src="./assets/images/banner-5.png" alt="Slide 3">
+        </div>
+
+        <div class="slide">
+          <img src="./assets/images/baner-4.png" alt="Slide 1">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div id="service">
+        <div id="m-sv">
+          <div class="sv-1 sv">
+            <div class="ser">
+              <div><img src="./assets/images/ckcl.png" alt=""></div>
+            <div class="ct-sv">
+              <h2>Cam kết chất lượng</h2>
+              <p>Lucky cam kết chất lượng Ngọc thiên nhiên 100%</p>
+            </div>
+            </div>
+          </div>
+          <div class="sv-2 sv">
+            <div class="ser">
+              <div><img src="./assets/images/tvcn.png" alt=""></div>
+            <div class="ct-sv">
+              <h2>Tư vấn chuyên nghiệp</h2>
+              <p>Đội ngũ tư vấn chuyên sâu và hỗ trợ nhiệt tình</p>
+            </div>
+            </div>
+          </div>
+          <div class="sv-3 sv ">
+            <div class="ser">
+              <div><img src="./assets/images/bhtd.png" alt=""></div>
+            <div class="ct-sv">
+              <h2>Cam kết chất lượng</h2>
+              <p>Chế độ bảo hành trọn đời</p>
+            </div>
+            </div>
+          </div>
+          <div class="sv-4 sv">
+            <div class="ser">
+              <div><img src="./assets/images/ghmp.png" alt=""></div>
+            <div class="ct-sv">
+              <h2>Cam kết chất lượng</h2>
+              <p>Miễn phí giao hàng trong nước và hỗ trợ Ship toàn cầu</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="main-sp">
+        <div id="sanpham">
+          <h2>Vòng ngọc vip</h2>
+          <div class="content">
+            <div class="lsp">
+              <div class="img"
+                style="background: url(./assets/images/vong-ngoc-vip-008.jpg) top left /  cover no-repeat;">
+                <img src="./assets/images/vip008-1.jpg" alt="">
+              </div>
+              <div class="tsp">
+                <h3>Vòng Ngọc Vip 008</h3>
+                <p>46,000,000 VNĐ</p>
+                <a href="./Products/vip008.html">Mua</a>
+              </div>
+            </div>
+            <div class="lsp">
+              <div class="img"
+                style="background: url(./assets/images/vong-ngoc-vip-010.jpg) top left /  cover no-repeat;">
+                <img src="./assets/images/vip010-1.jpg" alt="">
+              </div>
+              <div class="tsp">
+                <h3>Vòng Ngọc Vip 019</h3>
+                <p>35,000,000 VNĐ</p>
+                <a href="./Products/vip019.html">Mua</a>
+              </div>
+            </div>
+            <div class="lsp">
+              <div class="img"
+                style="background: url(./assets/images/vong-ngoc-vip-014.jpg) top left /  cover no-repeat;">
+                <img src="./assets/images/vip014-2.jpg" alt="">
+              </div>
+              <div class="tsp">
+                <h3>Vòng Ngọc Vip 014</h3>
+                <p>36,000,000 VNĐ</p>
+                <a href="./Products/vip014.html">Mua</a>
+              </div>
+            </div>
+            <div class="lsp">
+              <div class="img" style="background: url(./assets/images/ngocvip012-2.jpg) top left /  cover no-repeat;">
+                <img src="./assets/images/ngocvip012-1.jpg" alt="">
+              </div>
+              <div class="tsp">
+                <h3>Vòng Ngọc Vip 012</h3>
+                <p>26,000,000 VNĐ</p>
+                <a href="./Products/vip012.html">Mua</a>
+              </div>
+            </div>
+          </div>
+          <a href="./product.html" class="more">Xem thêm</a>
+        </div>
+        <div id="sanpham">
+          <h2>Vòng ngọc thiên nhiên</h2>
+          <div class="content">
+            <div class="lsp">
+              <div class="img"
+                style="background: url(./assets/images/bachngocanhtimlalan-2.jpg) top left / cover no-repeat;">
+                <img src="./assets/images/vongbachngocanhtimlalankingjade.jpg" alt="">
+              </div>
+              <div class="tsp">
+                <h3>Vòng Bạch Ngọc Ánh Tím La Lan</h3>
+                <p>6,000,000 VNĐ</p>
+                <a href="./Products/ATLL.html">Mua</a>
+              </div>
+            </div>
+            <div class="lsp">
+              <div class="img" style="background: url(./assets/images/bachngoc034-2.jpg) top left / cover no-repeat;">
+                <img src="./assets/images/vong-bach-ngoc-034.jpg" alt="">
+              </div>
+              <div class="tsp">
+                <h3>Vòng Bạch Ngọc 034</h3>
+                <p>6,000,000 VNĐ</p>
+                <a href="./Products/BN034.html">Mua</a>
+              </div>
+            </div>
+            <div class="lsp">
+              <div class="img"
+                style="background: url(./assets/images/vong-bach-ngoc-045.jpg) top left / cover no-repeat;">
+                <img src="./assets/images/bachngoc045-2.jpg" alt="">
+              </div>
+              <div class="tsp">
+                <h3>Vòng Bạch Ngọc 045</h3>
+                <p>3,450,000 VNĐ</p>
+                <a href="">Mua</a>
+              </div>
+            </div>
+            <div class="lsp"
+              style="background: url(./assets/images/vong-bach-ngoc-045.jpg) top left /  cover no-repeat;">
+              <div class="img">
+                <img src="./assets/images/bachngoc029-2.jpg" alt="">
+              </div>
+              <div class="tsp">
+                <h3>Vòng Bạch Ngọc 029</h3>
+                <p>4,550,000 VNĐ</p>
+                <a href="">Mua</a>
+              </div>
+            </div>
+          </div>
+          <a href="./product.html" class="more">Xem thêm</a>
+        </div>
+        <div id="sanpham">
+          <h2>Vòng ngọc huyết</h2>
+          <div class="content">
+            <div class="lsp">
+              <div class="img" style="background: url(./assets/images/ngochuyet-2.jpg) top left /  cover no-repeat;">
+                <img src="./assets/images/vong-ngoc-huyet-001.jpg" alt="">
+              </div>
+              <div class="tsp">
+                <h3>Vòng Ngọc Huyết 001</h3>
+                <p>6,000,000 VNĐ</p>
+                <a href="">Mua</a>
+              </div>
+            </div>
+            <div class="lsp">
+              <div class="img" style="background: url(./assets/images/huyet002-2.jpg) top left /  cover no-repeat;">
+                <img src="./assets/images/vong-ngoc-huyet-002.jpg" alt="">
+              </div>
+              <div class="tsp">
+                <h3>Vòng Ngọc Huyết 002</h3>
+                <p>6,000,000 VNĐ</p>
+                <a href="">Mua</a>
+              </div>
+            </div>
+            <div class="lsp">
+              <div class="img" style="background: url(./assets/images/ngochuyet003-2.jpg) top left /  cover no-repeat;">
+                <img src="./assets/images/vong-ngoc-huyet-003.jpg" alt="">
+              </div>
+              <div class="tsp">
+                <h3>Vòng Ngọc Huyết 003</h3>
+                <p>6,000,000 VNĐ</p>
+                <a href="">Mua</a>
+              </div>
+            </div>
+            <div class="lsp">
+              <div class="img" style="background: url(./assets/images/ngochuyet004-2.jpg) top left /  cover no-repeat;">
+                <img src="./assets/images/vong-ngoc-huyet-004.jpg" alt="">
+              </div>
+              <div class="tsp">
+                <h3>Vòng Ngọc Huyết 004</h3>
+                <p>6,000,000 VNĐ</p>
+                <a href="">Mua</a>
+              </div>
+            </div>
+          </div>
+          <a href="./product.html" class="more">Xem thêm</a>
+        </div>
+        <div id="sanpham">
+          <h2>Vòng ngọc Hòa Điền</h2>
+          <div class="content">
+            <div class="lsp">
+              <div class="img" style="background: url(./assets/images/hoadien004-2.jpg) top left /  cover no-repeat;">
+                <img src="./assets/images/hoadien004-1.jpg" alt="">
+              </div>
+              <div class="tsp">
+                <h3>Vòng Ngọc Hòa Điền 001</h3>
+                <p>6,000,000 VNĐ</p>
+                <a href="">Mua</a>
+              </div>
+            </div>
+            <div class="lsp">
+              <div class="img"
+                style="background: url(./assets/images/vong-ngoc-hoa-dien-006.jpg) top left /  cover no-repeat;">
+                <img src="./assets/images/hoadien006-1.jpg" alt="">
+              </div>
+              <div class="tsp">
+                <h3>Vòng Ngọc Hòa Điền 002</h3>
+                <p>6,000,000 VNĐ</p>
+                <a href="">Mua</a>
+              </div>
+            </div>
+            <div class="lsp">
+              <div class="img"
+                style="background: url(./assets/images/vong-ngoc-hoa-dien-007.jpg) top left /  cover no-repeat;">
+                <img src="./assets/images/hoadien007-1.jpg" alt="">
+              </div>
+              <div class="tsp">
+                <h3>Vòng Ngọc Hòa Điền 003</h3>
+                <p>6,000,000 VNĐ</p>
+                <a href="">Mua</a>
+              </div>
+            </div>
+            <div class="lsp">
+              <div class="img"
+                style="background: url(./assets/images/vong-ngoc-hoa-dien-009.jpg) top left /  cover no-repeat;">
+                <img src="./assets/images/hoadien009-1.jpg" alt="">
+              </div>
+              <div class="tsp">
+                <h3>Vòng Ngọc Hòa Điền 004</h3>
+                <p>6,000,000 VNĐ</p>
+                <a href="">Mua</a>
+              </div>
+            </div>
+          </div>
+          <a href="./product.html" class="more">Xem thêm</a>
+        </div>
+        
+      </div>
+    </div>
+    <div id="footer">
+      <div class="m-ft">
+        <div class="ft-1">
+          <a href="index.html">
+            <h1>Lucky</h1>
+          </a>
+          <p>Địa chỉ: Thủ Dầu Một, Bình Dương</p>
+          <p>Hotline: 0981273476</p>
+          <p>Email: lamnguyen01678@gmail.com</p>
+          <a class="lg" href="https://www.facebook.com/profile.php?id=100046430181033">
+            <img src="assets/images/logofb.jpg" alt="">
+          </a>
+          <a class="lg" href="https://www.facebook.com/profile.php?id=100046430181033">
+            <img src="./assets/images/ytlg.png" alt="">
+          </a>
+        </div>
+        <div class="ft-2">
+          <h1>Chính sách quy </h1>
+          <p>Quy định Chung</p>
+          <p>Bảo mật thông tin</p>
+        </div>
+        <div class="ft-3">
+          <img src="./assets/images/bgcontent.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="l-ft">
+      <img src="./assets/images/ft.png" alt="">
+      <p>Công ty cổ phần đá quý Lucky</p>
+      <p>Thủ Dầu Một, Bình Dương</p>
+    </div>
+    <script src="./assets/js/main.js"></script>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Set interval to automatically change slides every 5 seconds
+      var slideInterval = setInterval(function () {
+        plusSlides(1);
+      }, 5000);
+
+      // Pause interval when user clicks on a slide navigation button
+      document.querySelector('.prev').addEventListener('click', function () {
+        clearInterval(slideInterval);
+        plusSlides(-1);
+      });
+
+      document.querySelector('.next').addEventListener('click', function () {
+        clearInterval(slideInterval);
+        plusSlides(1);
+      });
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function showSlides(n) {
+        var slides = document.querySelectorAll('.slide');
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+        slides[slideIndex - 1].style.display = 'block';
+      }
+    </script>
+</body>
+
+</html>

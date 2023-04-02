@@ -1,0 +1,72 @@
+.m-ct{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 72px;
+}
+
+.m-ct .phanloai{
+    text-align: center;
+}
+
+.bn-prd{
+    position: relative;
+}
+
+#bn-prd h1{
+    font-family: Roughanthem;
+    position: absolute;
+    top: 50%;
+    font-size: 80px;
+    color: rgb(10, 183, 31);
+    text-shadow: 0 0 5px #fff;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.m-ct h4{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 20px;
+    display: block ;
+}
+
+.sanpham a{
+    padding: 8px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: aqua;
+    color: #000;
+    margin: 10px 0px 20px;
+}
+
+.khungsp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ct-img img{
+    width: 18vw;
+    height: auto;
+}
+
+.ct-img img:hover{
+    opacity: 0;
+}
+
+.sanpham{
+    width: 23%;
+    text-align: center;
+    margin: 20px 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(172, 252, 225);
+}
+
+#bn-prd{
+    width: 100%;
+    padding-top: 40% ;
+    background: url(../images/slither.jpg) top left / cover no-repeat;
+}
+

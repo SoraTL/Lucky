@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: lobster;
+    src: url(../font/Lobster/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roughanthem;
+    src: url(../font/rough_anthem/Rough\ Anthem.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo a {
+    font-size: 10vw;
+    color: rgb(10, 183, 31);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(249, 247, 247);
+    font-family: Roughanthem;
+}
+
+.more {
+    position: relative;
+    left: 46.3vw;
+    top: 30px;
+    padding: 12px;
+    background-color: rgb(0, 191, 255);
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.more:hover {
+    background-color: coral;
+    color: wheat;
+}
+
+#main-n {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(201, 254, 195);
+    z-index: 10;
+}
+
+.nav>li {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+    line-height: 40px;
+}
+
+.nav>li>a {
+    display: block;
+    text-decoration: none;
+    color: rgb(26, 7, 7);
+    padding: 16px 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.nav :nth-child(6) {
+    float: right;
+    margin-right: 30px;
+}
+
+.nav :nth-child(6) .usi {
+    background-color: rgb(4, 255, 0);
+    border-radius: 50%;
+    width: 36px;
+    color: rgb(255, 255, 255);
+    line-height: 36px;
+    text-align: center;
+}
+
+.cach {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav li:hover .subnav {
+    display: block;
+}
+
+.nav li:hover>a {
+    background-color: rgb(229, 244, 176);
+}
+
+.search input[type="text"] {
+    padding: 12px 16px;
+    border-style: none;
+    outline: none;
+    border-radius: 30px;
+}
+
+.search input[type="text"],
+.search {
+    background-color: rgb(255, 255, 255);
+}
+
+.search {
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(45, 174, 159);
+    color: aquamarine;
+}
+
+.search i {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.subnav {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    padding: 12px;
+    background-color: white;
+}
+
+.subnav li {
+    list-style-type: none;
+    margin-bottom: 5px;
+    border-style: none;
+}
+
+.subnav li a {
+    display: block;
+    box-shadow: 0 0 5px 3px rgb(175, 242, 255);
+    min-width: 170px;
+    padding: 12px;
+    border-radius: 7px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity ease 1s;
+
+}
+
+.check {
+    margin-top: 50px;
+    font-size: 12vw;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    color: white;
+    text-shadow: 0 0 5px #00000058;
+    transform: translateX(-50%);
+}
+
+#img {
+    width: 70%;
+    padding-top: 40%;
+    margin: 0 auto 100px;
+}
+
+#log-in:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.196);
+}
+
+.overlay-close {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    cursor: default;
+}
+
+.modal-body {
+    width: 30vw;
+    position: relative;
+    padding: 30px;
+    background: linear-gradient(319deg, rgba(45, 153, 174, 1) 0%, rgba(188, 254, 254, 1) 35%, rgba(248, 218, 208, 1) 100%);
+    list-style: none;
+    height: 100%;
+}
+
+.modal-body h1 {
+    margin: 10px auto 20px;
+    color: rgb(80, 201, 61);
+    text-align: center;
+}
+
+.modal-body input[type="text"],
+.modal-body input[type="password"],
+.modal-body input[type="email"] {
+    width: 92%;
+    padding: 12px;
+    margin: 0px auto;
+    border-style: none;
+    background-color: rgba(188, 254, 254, 1);
+    opacity: 0.5;
+    outline: none;
+}
+
+.text {
+    border-bottom: 1px solid #333;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.text input {
+    width: 100%;
+}
+
+.modal-body div input#login-btn {
+    padding: 12px;
+    margin-top: 20px;
+    border-style: none;
+    background-color: aqua;
+    border-radius: 5px;
+    color: rgb(255, 94, 0);
+    position: relative;
+    left: 50%;
+    cursor: pointer;
+    transform: translateX(-50%);
+}
+
+.modal-body li p {
+    min-width: 100px;
+}
+
+#sign-up:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+#bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#slider {
+    background: url(../images/slither.jpg) top center / cover no-repeat;
+    padding-top: 18vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+    margin-top: 72px;
+}
+
+#service {
+    background-color: #01307b;
+    border-top: 2px solid white;
+    color: #fff;
+}
+
+#m-sv {
+    width: 85%;
+    margin: auto;
+    display: block;
+    padding: 24px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ser {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sv {
+    width: 23%;
+    /* display: inline-block; */
+    border-right: 2px solid #fff;
+    margin: auto;
+}
+
+#service .sv-4 {
+    border-style: none;
+}
+
+.sv h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.sv p {
+    font-size: 12px;
+    width: 70%;
+    margin-left: 10px;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+.lsp {
+    width: 23%;
+    margin-top: 32px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.tsp {
+    background-color: aquamarine;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px 0px;
+}
+
+#sanpham>input[type="button"] {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    padding: 12px 16px;
+    border-style: none;
+    border-radius: 8px;
+    background-color: aqua;
+    z-index: -11;
+    cursor: pointer;
+}
+
+#sanpham h3 {
+    min-height: 50px;
+}
+
+#sanpham .lsp .tsp a {
+    padding: 5px 12px;
+    border-style: none;
+    display: inline-block;
+    background-color: tomato;
+    color: azure;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.lsp .img img {
+    width: 100%;
+}
+
+.lsp>.img:hover img {
+    opacity: 0;
+}
+
+#sanpham h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    color: rgb(44, 227, 255);
+    text-shadow: 0 0 5px rgb(217, 255, 0);
+    min-height: 36px;
+}
+
+
+
+#footer {
+    width: 90%;
+    margin-top: 90px;
+    border-top: 3px solid rgb(10, 183, 31);
+    margin: 50px auto 50px auto;
+
+}
+
+.m-ft {
+    width: 85%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ft-1 h1 {
+    font-family: Roughanthem;
+    color: rgb(10, 183, 31);
+    margin: 20px 0px;
+}
+
+.m-ft h1 {
+    margin: 20px 0px;
+}
+
+.m-ft p {
+    padding: 2px 0px;
+}
+
+.ft-3 {
+    width: 30%;
+}
+
+.ft-3 img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.l-ft {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #525252;
+    background-color: #e2e2e2;
+    padding-bottom: 20px;
+}
+
+.l-ft p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.lg img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.slideshow-container {
+    position: relative;
+    margin-bottom: 560px;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 250px;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+    color: #fff;
+    text-shadow: 0 0 5px black;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}

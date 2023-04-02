@@ -1,0 +1,25 @@
+.bg-ab{
+    background-color: rgb(244, 255, 244);
+}
+
+.about{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ab-img{
+    width: 30%;
+}
+
+.ab-img img {
+    width: 100%;
+    border-radius: 50% ;
+}
+
+.ab-ct{
+    width: 60%;
+}

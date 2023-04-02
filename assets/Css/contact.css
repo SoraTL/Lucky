@@ -1,0 +1,65 @@
+#contact{
+    width: 100%;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+input{
+    outline: none;
+}
+
+.contact-1 p{
+    opacity: 0.5;
+    font-size: 15px;
+    margin: 12px 0px;
+}
+
+.contact-2{
+    display: flex;
+    width: 100%;
+    gap: 50px;
+}
+
+.ct-01{
+    width: 100%;
+}
+
+.ct-01 input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border-style: none;
+    margin: 8px 0px;
+}
+
+.contact-3{
+    padding: 8px;
+}
+
+.contact-3 textarea{
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border-style: none;
+    margin: 8px 0px;
+    height: 100px;
+    outline: none;
+}
+
+.contact-4 input{
+    padding: 8px 40px;
+    border-style: none;
+    margin-top: 30px;
+    background-color:aqua;
+    cursor: pointer;
+}
+
+#ct-bg{
+    background-color:blanchedalmond ;
+    padding: 100px 50px;
+    width: 40%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgb(196, 255, 199);
+}
+
